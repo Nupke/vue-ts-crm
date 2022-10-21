@@ -1,7 +1,6 @@
 <template>
   <a-layout class="basicLayout-wrap">
-    <h6>Header</h6>
-
+    <Header />
     <a-layout>
       <h6>Sidebar</h6>
       <a-layout class="basicLayout-content">
@@ -23,7 +22,10 @@
   </a-layout>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Header from "./components/Header.vue";
+import useRouter from "vue-router";
+</script>
 
 <style lang="less" scoped>
 .basicLayout-wrap {
@@ -34,7 +36,6 @@
     overflow-y: auto;
     margin: 0;
     padding: 24px;
-    background: "#F0F1F4";
   }
 }
 </style>
