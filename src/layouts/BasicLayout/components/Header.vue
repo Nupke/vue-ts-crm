@@ -2,7 +2,7 @@
   <a-layout-header class="header">
     <div class="logo-wrap">
       <router-link :to="{ path: '/' }">
-        <!--        <img :src="logo" class="logo" />-->
+                <img :src="logo" class="logo" />
         <h1 class="title">{{ APP_TITLE }}</h1>
       </router-link>
     </div>
@@ -14,6 +14,7 @@
 
 <script setup lang="ts">
 import RightContent from "./RightContent.vue";
+import logo from '/@/assets/vue.png';
 import { APP_TITLE } from "../../../../config/constant";
 </script>
 
