@@ -15,6 +15,8 @@
           </a-menu-item>
           <Space class="wrap" align="baseline" direction="horizontal">
             <Icon align="2px" type="xitongshezhi" />
+            <span class="setting">Тест</span>
+            <Icon align="2px" type="xialajiantou" />
           </Space>
         </a-menu>
       </template>
