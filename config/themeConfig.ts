@@ -1,4 +1,4 @@
-import { getThemeVariables } from "ant-design-vue/dist/theme";
+import { getThemeVariables } from "ant-design-vue/dist/theme.js";
 
 /**
  * less global variable

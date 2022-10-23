@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "serve": "npm run dev",
+    "preview": "vite preview",
+    "dev:development": "vite --mode development",
+    "build:check": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.0.1",
@@ -59,7 +62,7 @@
     "vite-plugin-compression": "^0.3.6",
     "vite-plugin-mock": "^2.9.6",
     "vite-plugin-style-import": "^1.4.0",
-    "vite-plugin-svg-icons": "^1.0.5",
+    "vite-plugin-svg-icons": "1.0.5",
     "vue-eslint-parser": "^7.11.0",
     "vue-tsc": "^0.3.0"
   }
