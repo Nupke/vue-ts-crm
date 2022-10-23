@@ -4,7 +4,7 @@
  */
 import type { Plugin } from "vite";
 import compressPlugin from "vite-plugin-compression";
-import { COMPRESSION } from "../constant";
+import { COMPRESSION } from "../../constant";
 
 export function configCompressPlugin(): Plugin | Plugin[] {
   if (COMPRESSION) {

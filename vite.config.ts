@@ -1,18 +1,19 @@
 import { UserConfig, ConfigEnv } from "vite";
 import { resolve } from "path";
 
-import proxy from "./config/proxy";
-import { createVitePlugins } from "./config/plugin";
+import proxy from "./config/vite/proxy";
+import { createVitePlugins } from "./config/vite/plugin";
 import { generateModifyVars } from "./config/themeConfig";
-import { configManualChunk } from "./config/optimizer";
+import { configManualChunk } from "./config/vite/optimizer";
 import { VITE_DROP_CONSOLE, VITE_PORT } from "./config/constant";
 
 function pathResolve(dir: string) {
   return resolve(process.cwd(), ".", dir);
 }
 
+// https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv): UserConfig => {
-  const isBuild = command === "build";
+  const isBuild = command === 'build';
   console.log(command, mode);
 
   return {

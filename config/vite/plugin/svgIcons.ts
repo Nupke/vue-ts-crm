@@ -8,10 +8,10 @@ import path from "path";
 
 export function configSvgIconsPlugin(isBuild: boolean) {
   const svgIconsPlugin = SvgIconsPlugin({
-    iconDirs: [path.resolve(process.cwd(), "src/assets/icons")],
+    iconDirs: [path.resolve(process.cwd(), 'src/icons')],
     svgoOptions: isBuild,
     // default
-    symbolId: "icon-[dir]-[name]",
+    symbolId: 'icon-[dir]-[name]',
   });
   return svgIconsPlugin;
 }
