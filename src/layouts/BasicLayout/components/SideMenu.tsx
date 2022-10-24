@@ -94,7 +94,7 @@ export default defineComponent({
               <div class="my-sideMenu-sider_logo">
                 <Space align="center" class="link">
                   <Icon type="guanlipingtai" size="20px" align="0px" />
-                  <span class="font16 nowrap">Тест</span>
+                  <span class="font16 nowrap">Ссылка</span>
                 </Space>
               </div>
             )}
