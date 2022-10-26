@@ -1,0 +1,1 @@
+import { ReqParams, ResInfoList, ResResult } from './model';

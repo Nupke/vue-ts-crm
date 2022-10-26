@@ -29,11 +29,14 @@
         </a-card>
       </a-col>
     </a-row>
+    <a-divider class="line" />
   </div>
 </template>
 
 <script setup lang="ts">
 import IconSearch from "../../assets/images/Icon _Search.png";
+import DataOverview from "./components/DataOverview.vue";
+import { columns } from "./constant";
 
 console.log("homepage");
 </script>
